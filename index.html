@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order Form</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/pizza.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>PizzaVilla</h1>
+        <p id="student-info"></p>
+    </header>
+    <main>
+        <form id="pizza-order-form">
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" name="customer-name" required>
+
+            <label for="customer-mobile">Mobile Number:</label>
+            <input type="tel" id="customer-mobile" name="customer-mobile" required pattern="[0-9]{10}"
+                title="Mobile number should be 10 digits">
+
+            <label for="size">Choose pizza size:</label>
+            <select id="size" name="size" required>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <fieldset>
+                <legend>Ingredients:</legend>
+                <label><input type="checkbox" name="ingredients" value="pepperoni"> Pepperoni</label>
+                <label><input type="checkbox" name="ingredients" value="mushrooms"> Mushrooms</label>
+                <label><input type="checkbox" name="ingredients" value="onions"> Onions</label>
+                <label><input type="checkbox" name="ingredients" value="sausage"> Sausage</label>
+                <label><input type="checkbox" name="ingredients" value="bacon"> Bacon</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras:</legend>
+                <label><input type="checkbox" name="extras" value="extra-cheese"> Extra Cheese</label>
+                <label><input type="checkbox" name="extras" value="garlic-crust"> Garlic Crust</label>
+                <label><input type="checkbox" name="extras" value="stuffed-edges"> Stuffed Edges</label>
+                <label><input type="checkbox" name="extras" value="spicy-sauce"> Spicy Sauce</label>
+                <label><input type="checkbox" name="extras" value="seasoning"> Seasoning</label>
+            </fieldset>
+
+            <label for="crust">Crust type:</label>
+            <select id="crust" name="crust" required>
+                <option value="thin">Thin Crust</option>
+                <option value="thick">Thick Crust</option>
+                <option value="cheese-stuffed">Cheese Stuffed Crust</option>
+            </select>
+
+            <label for="special-instructions">Special instructions:</label>
+            <textarea id="special-instructions" name="special-instructions" rows="4" cols="50"></textarea>
+
+            <input type="button" value="Order" id="order-button">
+        </form>
+
+        <div id="pizza-summary">
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 PizzaVilla
+    </footer>
+</body>
+
+</html>
