@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -13,6 +14,7 @@ body {
     margin-left: 565px;
 }
 
+/* Creates a blurred background effect */
 body::before {
     content: '';
     position: fixed;
@@ -28,12 +30,14 @@ body::before {
     pointer-events: none;
 }
 
+/* Header styling */
 header {
     background: #333;
     color: #fff;
     padding: 20px 0;
 }
 
+/* Styling for the main heading in the header */
 header h1 {
     margin: 0;
     text-align: center;
@@ -50,6 +54,7 @@ header h1 {
     border-top: 3px solid #ffcc00;
 }
 
+/* Main content area styling */
 main {
     margin: 20px auto;
     max-width: 600px;
@@ -59,6 +64,7 @@ main {
     border-radius: 8px;
 }
 
+/* Styling for fieldsets in the form */
 fieldset {
     border: 1px solid #ddd;
     padding: 10px;
@@ -67,6 +73,7 @@ fieldset {
     background: #f9f9f9;
 }
 
+/* Legend styling */
 legend {
     padding: 0 5px;
     font-size: 1.1em;
@@ -78,6 +85,7 @@ legend {
     font-size: 1.2em;
 }
 
+/* Styling the label*/
 label {
     display: block;
     margin: 10px 0 5px;
@@ -85,10 +93,12 @@ label {
     align-items: center;
 }
 
+/* Styling the Checkbox*/
 input[type="checkbox"] {
     margin-right: 5px;
 }
 
+/* Styling for input fields, select dropdown, and textarea */
 select,
 textarea,
 input[type="text"],
@@ -122,6 +132,7 @@ input[type="button"]:active {
     background: #39596a;
 }
 
+/*Summary for the pizza*/
 #pizza-summary {
     background: #e9ffe9;
     border: 1px solid #d4edd4;
@@ -138,6 +149,7 @@ input[type="button"]:active {
     margin-bottom: 20px;
 }
 
+/*Styling the footer*/
 footer {
     background-color: #333;
     color: #fff;
