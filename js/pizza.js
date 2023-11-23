@@ -48,7 +48,9 @@ class Pizza {
         this.specialInstructions = specialInstructions;
     }
 
+    // Method to describe the pizza order
     describe() {
+        // a string representation of the pizza order
         return `
             <p>Name: ${this.customerName}</p>
             <p>Mobile: ${this.customerMobile}</p>
@@ -60,6 +62,7 @@ class Pizza {
         `;
     }
 }
+// Function to check if at least one checkbox is checked in a given group
 function isAtLeastOneChecked(selector) {
     return Array.from(document.querySelectorAll(selector)).some(el => el.checked);
 }

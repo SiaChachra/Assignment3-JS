@@ -11,16 +11,22 @@
 <body>
     <header>
         <h1>PizzaVilla</h1>
+        <!-- Paragraph for student information, dynamically filled by JavaScript -->
         <p id="student-info"></p>
     </header>
     <main>
+        <!-- Form for pizza order with an unique ID -->
         <form id="pizza-order-form">
+
+            <!-- Input field for customer's name -->
             <label for="customer-name">Name:</label>
             <input type="text" id="customer-name" name="customer-name" required>
 
+            <!-- Input field for customer's mobile number -->
             <label for="customer-mobile">Mobile Number:</label>
             <input type="tel" id="customer-mobile" name="customer-mobile" required pattern="[0-9]{10}">
 
+            <!-- Dropdown for selecting pizza size -->
             <label for="size">Choose pizza size:</label>
             <select id="size" name="size" required>
                 <option value="small">Small</option>
@@ -29,6 +35,7 @@
             </select>
 
             <fieldset>
+                <!-- Checkboxes for various ingredients -->
                 <legend>Ingredients:</legend>
                 <label><input type="checkbox" name="ingredients" value="pepperoni"> Pepperoni</label>
                 <label><input type="checkbox" name="ingredients" value="mushrooms"> Mushrooms</label>
@@ -38,6 +45,7 @@
             </fieldset>
 
             <fieldset>
+                <!-- Checkboxes for various extra items -->
                 <legend>Extras:</legend>
                 <label><input type="checkbox" name="extras" value="extra-cheese"> Extra Cheese</label>
                 <label><input type="checkbox" name="extras" value="garlic-crust"> Garlic Crust</label>
@@ -46,6 +54,7 @@
                 <label><input type="checkbox" name="extras" value="seasoning"> Seasoning</label>
             </fieldset>
 
+            <!-- Dropdown for selecting crust type -->
             <label for="crust">Crust type:</label>
             <select id="crust" name="crust" required>
                 <option value="thin">Thin Crust</option>
@@ -53,6 +62,7 @@
                 <option value="cheese-stuffed">Cheese Stuffed Crust</option>
             </select>
 
+            <!-- Textarea for special instructions -->
             <label for="special-instructions">Special instructions:</label>
             <textarea id="special-instructions" name="special-instructions" rows="4" cols="50"></textarea>
 
