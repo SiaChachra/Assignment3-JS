@@ -85,7 +85,7 @@ legend {
     font-size: 1.2em;
 }
 
-/* Styling the label*/
+/* label styling*/
 label {
     display: block;
     margin: 10px 0 5px;
@@ -93,7 +93,7 @@ label {
     align-items: center;
 }
 
-/* Styling the Checkbox*/
+/* Styling Checkbox*/
 input[type="checkbox"] {
     margin-right: 5px;
 }
@@ -160,21 +160,8 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.0);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        width: 90%;
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-}
-
 .error {
     color: #a94442;
-    /* Red color for error messages */
     font-size: 0.85em;
     margin-top: 5px;
 }
